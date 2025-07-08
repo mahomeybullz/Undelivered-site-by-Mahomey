@@ -1,0 +1,92 @@
+body {
+  background: #0d0d1d url('https://i.ibb.co/0JmYs8Z/rain.gif') repeat;
+  background-size: cover;
+  font-family: 'Courier New', monospace;
+  color: #eee;
+  padding: 20px;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #ffffff60;
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff0055; }
+  20% { text-shadow: -2px -2px #00ffff; }
+  40% { text-shadow: 2px -2px #ff00ff; }
+  60% { text-shadow: -2px 2px #00ffcc; }
+  100% { text-shadow: 2px 2px #ff0055; }
+}
+
+.confession-wall {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.confession-card {
+  background: #1a1a2e;
+  border-left: 3px solid #f0f;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px #0005;
+}
+
+.confession-card h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #ffc;
+}
+
+.confession-card p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #eee;
+}
+
+.meta {
+  font-size: 0.8em;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-btn {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.like-btn:hover {
+  transform: scale(1.1);
+  color: #f66;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-bar button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-bar button:hover {
+  background: #555;
+}
