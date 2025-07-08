@@ -1,7 +1,65 @@
-<!-- Confession Wall -->
 <!DOCTYPE html>
-<html>
-<head><title>Confession Wall</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confession Wall — Undelivered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Confession Wall</h1>
-<!-- Confession listing will appear here --></body></html>
+  <h1 class="title glitch">💌 Confession Wall</h1>
+
+  <div class="filter-bar">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('boyfriend')">Boyfriend</button>
+    <button onclick="filterCategory('friend')">Friend</button>
+    <button onclick="filterCategory('cousin')">Cousin</button>
+    <button onclick="filterCategory('crush')">Crush</button>
+  </div>
+
+  <div id="confession-wall" class="confession-wall">
+
+    <!-- 📨 SAMPLE MESSAGE #1 -->
+    <div class="confession-card" data-category="boyfriend">
+      <h3>To M.</h3>
+      <p>ikaw na nga hindi crushable, seloso ka pa. i miss u 😤</p>
+      <div class="meta">
+        <span class="category">boyfriend</span> • <span class="time">2 hours ago</span>
+        <span class="like-btn">❤️ 12</span>
+      </div>
+    </div>
+
+    <!-- 📨 SAMPLE MESSAGE #2 -->
+    <div class="confession-card" data-category="friend">
+      <h3>Dear N</h3>
+      <p>stop being so cute. ang hirap tuloy mag move on kahit wala namang tayo 😭</p>
+      <div class="meta">
+        <span class="category">friend</span> • <span class="time">5 hours ago</span>
+        <span class="like-btn">❤️ 33</span>
+      </div>
+    </div>
+
+    <!-- 📨 SAMPLE MESSAGE #3 -->
+    <div class="confession-card" data-category="crush">
+      <h3>Hey, Nov</h3>
+      <p>you’re the reason i failed chem. bakit ka kasi ang pogi sa third row 😩💔</p>
+      <div class="meta">
+        <span class="category">crush</span> • <span class="time">yesterday</span>
+        <span class="like-btn">❤️ 61</span>
+      </div>
+    </div>
+
+    <!-- 📨 SAMPLE MESSAGE #4 -->
+    <div class="confession-card" data-category="cousin">
+      <h3>To C</h3>
+      <p>miss na kita bestie cousin kong marites. lumandi ka muna tapos chika mo agad sakin 🧍‍♀️</p>
+      <div class="meta">
+        <span class="category">cousin</span> • <span class="time">2 days ago</span>
+        <span class="like-btn">❤️ 5</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
