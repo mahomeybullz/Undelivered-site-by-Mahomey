@@ -1,7 +1,33 @@
-<!-- Submit Page -->
 <!DOCTYPE html>
-<html>
-<head><title>Submit</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit a Confession</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Submit a Confession</h1>
-<!-- Form to submit a message --></body></html>
+  <h1 class="title glitch">✏️ Submit a Confession</h1>
+
+  <form id="confessionForm" class="confession-form">
+    <label for="recipient">To (optional):</label>
+    <input type="text" id="recipient" name="recipient" placeholder="e.g. To M.">
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+      <option value="">Choose one</option>
+      <option value="boyfriend">Boyfriend</option>
+      <option value="friend">Friend</option>
+      <option value="cousin">Cousin</option>
+      <option value="crush">Crush</option>
+      <option value="stranger">Stranger</option>
+    </select>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" placeholder="say it. they’ll never know." rows="8" required></textarea>
+
+    <button type="submit">💌 Send</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
