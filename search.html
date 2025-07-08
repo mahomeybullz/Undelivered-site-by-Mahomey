@@ -1,7 +1,22 @@
-<!-- Search Page -->
 <!DOCTYPE html>
-<html>
-<head><title>Search</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Confessions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Search Messages</h1>
-<!-- Search functionality --></body></html>
+  <h1 class="title glitch">🔍 Search Messages</h1>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Enter a name...">
+    <button onclick="searchMessages()">Search</button>
+  </div>
+
+  <div id="searchResults" class="confession-wall">
+    <!-- Filtered messages will appear here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
