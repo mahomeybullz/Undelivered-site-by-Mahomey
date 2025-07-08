@@ -1,7 +1,26 @@
-<!-- Editor Dashboard -->
 <!DOCTYPE html>
-<html>
-<head><title>Editor</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Editor Panel</h1>
-<!-- Moderation tools --></body></html>
+  <h1 class="title glitch">🛠 Editor Panel</h1>
+  <p style="text-align: center;">(moderate your rainstorm of thoughts ☔)</p>
+
+  <div id="editorConfessions" class="confession-wall">
+    <!-- Each confession will include a delete button -->
+    <div class="confession-card">
+      <h3>To J</h3>
+      <p>ikaw pa rin kahit late reply ka. 🤡</p>
+      <div class="meta">
+        <span class="category">crush</span> • <span class="time">4 min ago</span>
+        <button class="delete-btn" onclick="deleteConfession('example-id')">🗑 Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
