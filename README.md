@@ -1,1 +1,2 @@
-# Undelivered-site-by-Mahomey
+# Undelivered — by MAHOMEY BULWAYAN LD
+A glitchy diary-themed anonymous confession wall.
